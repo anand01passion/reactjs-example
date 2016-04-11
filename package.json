@@ -1,0 +1,40 @@
+{
+  "name": "React Learning",
+  "version": "0.1.0",
+  "description": "React Learning with examples",
+  "main": "javascript/app.js",
+  "dependencies": {
+   "react": "0.13.3",
+    "react-ace": "^2.0.3",
+    "react-ace-wrapper": "^1.0.1",
+    "react-bootstrap": "0.23.4",
+    "reqwest": "1.1.5",
+    "underscore": "1.8.0"
+  },
+  "devDependencies": {
+    "browserify": "10.2.4",
+    "uglifyjs": "2.4.10",
+    "watchify": "3.2.2",
+    "babelify": "6.1.2"
+  },
+  "engines": {
+    "node": "0.10.x ||0.12.x"
+  },
+  "scripts": {
+    "start": "watchify -o js/app.dev.js -v -d .",
+    "build": "browserify ./javascript/app.js | uglifyjs -cm > ../public/js/app.prod.js"
+  },
+  "author": "(Marco, Uday, Ramratan)",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "blacklist": [
+            "regenerator"
+          ]
+        }
+      ]
+    ]
+  }
+}

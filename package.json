@@ -1,16 +1,11 @@
 {
-  "name": "React Learning",
+  "name": "ReactLearning",
   "version": "0.1.0",
   "description": "React Learning with examples",
   "main": "javascript/app.js",
   "dependencies": {
-   "react": "0.13.3",
-    "react-ace": "^2.0.3",
-    "react-ace-wrapper": "^1.0.1",
-    "react-bootstrap": "0.23.4",
-    "reqwest": "1.1.5",
-    "underscore": "1.8.0"
-  },
+   "react": "0.13.3"
+ },
   "devDependencies": {
     "browserify": "10.2.4",
     "uglifyjs": "2.4.10",
